@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 
 type Props = {};
 
-const words = ["Think", "Execute", "Build"];
+const words = ["Think", "Create", "Transform"];
 
 export default function WhatWeDo({}: Props) {
   const [index, setIndex] = useState(0);
@@ -45,12 +45,12 @@ export default function WhatWeDo({}: Props) {
                 <h2 className="font-popins mb-2 text-sm lg:text-base">
                   WHAT WE DO
                 </h2>
-                <h1 className="font-plus-jakarta-sans font-semibold mb-4 text-5xl lg:text-9xl text-white">
+                <h1 className="font-plus-jakarta-sans font-semibold mb-4 text-5xl lg:text-7xl xl:text-9xl text-white">
                   {words[index]}
                 </h1>
                 <p className="font-popins  max-w-80 lg:max-w-130 text-sm lg:text-base mx-auto lg:mx-0">
-                  Expert guidance to help you choose wisely, adapt quickly, and
-                  build stronger, more resilient systems for lasting success
+                  From vision to execution, we shape ideas that shine and scale
+                  with your business.
                 </p>
               </motion.div>
             </AnimatePresence>

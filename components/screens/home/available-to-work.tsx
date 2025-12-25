@@ -57,7 +57,7 @@ export default function AvailableToWork({}: Props) {
             transition={{ type: "spring", stiffness: 300 }}
             className="text-gray-one cursor-default"
           >
-            Grow
+            Thrive
           </motion.span>
         </div>
 
@@ -67,7 +67,7 @@ export default function AvailableToWork({}: Props) {
             transition={{ type: "spring", stiffness: 300 }}
             className="text-gray-one cursor-default"
           >
-            Grow
+            Build
           </motion.span>
           <motion.div
             whileHover={{ scale: 1.1, rotate: 0 }}

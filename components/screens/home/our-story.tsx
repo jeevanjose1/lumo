@@ -13,9 +13,12 @@ export default function OurStory({}: Props) {
             Our Story
           </h1>
           <p className="text-white text-base lg:text-lg font-inter max-w-lg">
-            Amid a universe of endless possibilities we emerged with purpose —
-            crafting a story woven with dreams, struggles, laughter, and
-            victories that define our journey.
+            Lumoo Global began in Kochi with a simple idea: developing digital
+            solutions that are effective and active in empowering the way we do
+            business. What originally began with an ambitious tiny team grew to
+            become a design studio, branding and digital lab. We are committed
+            to straightforward communication, clean technology and the bravery
+            to try something new.
           </p>
           <div className="max-w-min px-3 py-2! bg-gray-one/40 text-white rounded-full shadow-md hover:scale-105 transition-transform duration-300 scale-100">
             <Button className="px-3 py-6! shadow-md bg-black text-white rounded-full flex items-center gap-3 hover:bg-gray-900 transition-all group">

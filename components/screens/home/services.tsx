@@ -24,24 +24,24 @@ const ServiceCard = ({ title, description, number }: CardProp) => {
 export default function Services({}: Props) {
   const data = [
     {
-      title: "Web Designing",
+      title: "UI/UX Design",
       description:
-        "We uncover what drives your brand through purpose clarity audience insight and business focus.",
+        "Good UX starts with clarity—intuitive design and seamless flow turn visitors into loyal, satisfied fans.",
     },
     {
-      title: "Web Development",
+      title: "Web & Mobile App Development",
       description:
-        "We uncover what drives your brand through purpose clarity audience insight and business focus.",
+        "We build fast, secure web and mobile apps delivering consistent performance, seamless experiences, and future-ready reliability.",
+    },
+    {
+      title: "Cloud Services",
+      description:
+        "We move your systems to secure, always-accessible cloud platforms, ensuring smooth operations while you focus business.",
     },
     {
       title: "Digital Marketing",
       description:
-        "We uncover what drives your brand through purpose clarity audience insight and business focus.",
-    },
-    {
-      title: "UI/UX Design",
-      description:
-        "We uncover what drives your brand through purpose clarity audience insight and business focus.",
+        "Consistent, audience-aligned content and quick responses keep your social channels active, engaging, and always up-to-date.",
     },
   ];
   return (
