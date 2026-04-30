@@ -27,7 +27,7 @@ jobs:
   
   docker-luno:
     needs: build-lumo
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
