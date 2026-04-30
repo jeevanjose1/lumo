@@ -24,3 +24,20 @@ jobs:
       
       - name: Build Project
         run: npm run build
+  
+  docker-luno:
+    needs: build-lumo
+    runs-on: ubantu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Docker Login
+        run: docker login -u "${{secrets.DOCKER_USER}}" -p "${{secrets.DOCKER_TOKEN}}"
+      
+      - name: Build image
+        run: docker build -t "${{secrets.DOCKER_USER}}/lumo:latest" .
+
+      - name: Push to Docker
+        run: docker push  "${{secrets.DOCKER_USER}}/lumo:latest"
