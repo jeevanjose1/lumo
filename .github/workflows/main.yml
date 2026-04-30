@@ -45,6 +45,7 @@ jobs:
       - name: Build and Push
         uses: docker/build-push-action@v5
         with:
+          context: .
           push: true
           tags: ${{ secrets.DOCKER_USER }}/lumo:0.1
 
@@ -52,7 +53,13 @@ jobs:
     needs: docker-luno
     runs-on: ubuntu-latest
 
+
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
       - name: Diploy on vercel
         uses: amondnet/vercel-action@v25
         with:
