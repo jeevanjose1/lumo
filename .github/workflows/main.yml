@@ -1,0 +1,26 @@
+name: Lumo
+
+on: 
+  push:
+      branches: ['home']
+  pull_request:
+      branches: ['home']
+
+jobs:
+  build-lumo:
+    runs-on: ubandu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: action/checkout@v6
+      
+      - name: Node Setup
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      
+      - name: Install Deps
+        run:  npm i
+      
+      - name: Build Project
+        run: npm run build
